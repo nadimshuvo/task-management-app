@@ -1,0 +1,22 @@
+.nav-container {
+  gap: 35px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+.link {
+  color: #858b93;
+  transition: 0.3s ease-out;
+  &:hover {
+    color: #6aea5c;
+  }
+  &-active {
+    color: #f9f9f9;
+    @media screen and (min-width: 768px) {
+      border-bottom: 2px solid transparent;
+      border-image: linear-gradient(to right, #6aea5c 45%, #131517 45%);
+      border-image-slice: 1;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.header-inner {
+  padding-top: 40px;
+}
+
+.nav {
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.cta {
+  background: transparent;
+  border: 1px solid #272633;
+  border-radius: 8px;
+  cursor: pointer;
+  & > button {
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    padding: 8px 32px 8px 29px;
+    background: linear-gradient(90deg, #eb9204 -33.14%, #83e868 116.38%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+// mobile-menu
+.mobile-menu {
+  cursor: pointer;
+  @media screen and (min-width: 768px) {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.x-icon {
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
